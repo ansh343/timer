@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url("timer.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        }
+
+        .countdown {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+            text-align: center;
+            color: rgb(6, 17, 69);
+            margin-top: 200px;
+            background-image: url("timer.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        h1 {
+            color:rgb(6, 17, 69);
+            letter-spacing: 10px;
+        }
+
+        #timer {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="countdown">
+        <h1>Count-Down Timer</h1>
+        <div id="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>
